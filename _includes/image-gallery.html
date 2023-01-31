@@ -23,9 +23,7 @@
   }
   .image-gallery li a img {
     width: 100%;
-    height: auto;
     display: block;
-    visibility: visible;
   }
 </style>
 
@@ -40,8 +38,6 @@
       ><img
         src="//images.weserv.nl/?url={{ site.url | replace: 'http://','' | replace: 'https://','' }}{{ file.path | relative_url }}&w=300&h=300&output=jpg&q=50&t=square"
         alt="{{ filename }}"
-        width="300"
-        height="300"
         title="{{ filename }}" /><span>{{ filename }}</span></a
     >
   </li>
